@@ -23,6 +23,10 @@ function addTodo(event){
     trashButton.innerHTML='<i class= "fas fa-trash"></i>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
+    var editButton=document.createElement("button");
+    editButton.innerHTML='<i class= "fas fa-edit"></i>';
+    editButton.classList.add("edit-btn");
+    todoDiv.appendChild(editButton);
     todoList.appendChild(todoDiv);
     todoInput.value="";
 }
@@ -37,7 +41,13 @@ if  (item.classList[0]==="complete-btn"){
     var todo=item.parentElement;
     todo.classList.toggle("completed");
 }
+
+//if  (item.classList[0]==="edit-btn"){
+
+//}
+
 }
+
 
 function filterTodo(e){
 var todos=todoList.childNodes;

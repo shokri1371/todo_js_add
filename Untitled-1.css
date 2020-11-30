@@ -67,7 +67,8 @@ form button:hover{
     flex: 1;
 }
 .trash-btn,
-.complete-btn{
+.complete-btn,
+.edit-btn{
 background-color: orange;
 color: white;
 border: none;
@@ -78,6 +79,28 @@ font-size: 1rem;
 .complete-btn{
     background: green;
 }
+.edit-btn{
+    background: green;
+}
+
+
+.edit {
+    padding-top: 5px;
+    float: right;
+    padding-right: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.editinputstyle {
+    width: 40%;
+    background-color: lightpink;
+    color: black;
+    border: none;
+}
+
+
+
 .todo-item{
     padding:0rem 0.5rem;
 }
